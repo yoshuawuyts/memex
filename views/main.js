@@ -11,9 +11,12 @@ function view (state, emit) {
           <h1 class="mt0">
             Yoshua Wuyts
           </h1>
-          <h2>
+          <h2 class="cf">
             Hobbyist Programmer
           </h2>
+          <a class="fl mt2 white w-100" href="mailto:yoshuawuyts@gmail.com">yoshuawuyts@gmail.com</a>
+          <a class="fl mt2 white" href="https://github.com/yoshuawuyts">GitHub</a>
+          <a class="fl mt2 white ml3" href="https://twitter.com/yoshuawuyts">Twitter</a>
         </section>
         <section class="fl w-100 w-two-thirds-l pl6-ns">
           <h2 class="mt5 mt0-ns">
