@@ -4,6 +4,7 @@ var projects = require('../projects.json')
 module.exports = view
 
 function view (state, emit) {
+  emit('DOMTitleChange', 'yoshua wuyts')
   return html`
     <body class="pa5 code bg-black white">
       <main class="center mw8 flex flex-column flex-row-ns">
