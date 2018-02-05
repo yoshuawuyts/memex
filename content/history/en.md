@@ -93,3 +93,15 @@ probably work out well.
 | `emitter.emit('history:replaceState', url)` | Yes                | Yes           | Replace the top-most history entry with another.
 | `emitter.on('history:popstate')`            | No                 | No            | Listen for any changes to the history stack, other than through `history.pushState` or `history.replaceState`.
 | `emitter.on('history:navigate')`            | No                 | No            | Listen for all changes to the history stack.
+
+This would allow us to cover all cases the history API provides for us, with the
+added bonus that we can listen to all change events through our own
+`history:navigate` API.
+
+## Clicking Anchors.
+Tbi.
+
+- find a hash link on the same page.
+- try and navigate to a new page, and then click an anchor.
+- this behavior almost needs toggling.
+- if none of the above match, disable anchor clicks all together.
