@@ -1,5 +1,7 @@
 var css = require('sheetify')
 var choo = require('choo')
+var path = require('path')
+var fs = require('fs')
 
 css('tachyons')
 
@@ -11,6 +13,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 app.route('/', require('./views/main'))
+app.route('/history', require('./views/article')(fs.readFileSync(path.join(__dirname, 'content/history/en.md'), 'utf8')))
 app.route('/*', require('./views/404'))
 
 if (!module.parent) app.mount('body')
