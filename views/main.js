@@ -18,6 +18,7 @@ function view (state, emit) {
           <a class="fl mt2 white w-100" href="mailto:yoshuawuyts@gmail.com">yoshuawuyts@gmail.com</a>
           <a class="fl mt2 white" href="https://github.com/yoshuawuyts">GitHub</a>
           <a class="fl mt2 white ml3" href="https://twitter.com/yoshuawuyts">Twitter</a>
+          <a class="fl mt2 white ml3" href="https://twitch.tv/yoshuawuyts">Twitch</a>
         </section>
         <section class="fl w-100 w-two-thirds-l pl6-ns">
           <h2 class="mt5 mt0-ns">
