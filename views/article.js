@@ -24,9 +24,9 @@ function view (state, emit, src) {
 
   var urls = []
   var content = render(src)
-  var refs = urls.map((url) => html`<li class="mb2"><a class="white" href="${url[0]}">${url[0]}</a></li>`)
+  var refs = urls.map((url) => html`<li class="mb2"><a class="black" href="${url[0]}">${url[0]}</a></li>`)
   return html`
-    <body class="code lh-copy bg-black white pa4">
+    <body class="code lh-copy pa4">
       <main class="center measure-wide">
         <h1 class="mb0 mt5">
           Architecting a History Pipeline
@@ -54,7 +54,7 @@ function view (state, emit, src) {
     }
     renderer.link = function (url, _, text) {
       urls.push([ url, he.decode(text) ])
-      return `<a class="white" href="${url}">${text}</a><sup class="ml1"><a class="link white" href="#references">${urls.length}</a></sup>`
+      return `<a class="black" href="${url}">${text}</a><sup class="ml1"><a class="link white" href="#references">${urls.length}</a></sup>`
     }
     return raw(marked(src, { renderer }))
   }

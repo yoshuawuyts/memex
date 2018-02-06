@@ -105,3 +105,8 @@ Tbi.
 - try and navigate to a new page, and then click an anchor.
 - this behavior almost needs toggling.
 - if none of the above match, disable anchor clicks all together.
+
+## Transition period
+- incremental rollout.
+- write tests.
+- perhaps a module?
