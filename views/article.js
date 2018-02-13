@@ -27,8 +27,14 @@ function view (state, emit, src) {
   var refs = urls.map((url) => html`<li class="mb2"><a class="black" href="${url[0]}">${url[0]}</a></li>`)
   return html`
     <body class="code lh-copy pa4">
+      <header class="center measure-wide">
+        <a href="/" class="mt3 gray link">
+          <span class="underline">home</span>
+          <span>→</span>
+        </a>
+      </header>
       <main class="center measure-wide">
-        <h1 class="mb0 mt5">
+        <h1 class="mb0 mt4">
           Architecting a History Pipeline
         </h1>
         <h2 class="gray f5 mt2 mb4">
