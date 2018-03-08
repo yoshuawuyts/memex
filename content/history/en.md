@@ -39,7 +39,7 @@ looking at. By default it's always the top one, but the history API allows us to
 move around._
 
 | API                                       | New history entry? | Moves cursor? | Description |
-| ---                                       | ------------------ | ------------- |
+| ---                                       | ------------------ | ------------- | -----------
 | `window.history.back()`                   | No                 | Yes           | Navigate backward in the history API.
 | `window.history.forward()`                | No                 | Yes           | Move forward through the history stack.
 | `window.history.go(n)`                    | No                 | Yes           | Move forward or backward `n` steps through the history stack.
