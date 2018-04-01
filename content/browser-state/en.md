@@ -19,6 +19,41 @@ reduce the amount of code we write to _only_ define the behavior. In the end the
 only way we can write something large, is by writing small things that work in
 tandem.
 
+## Label your branches
+Using `if..else` statements is the bread and butter of programming. Based on a
+condition we make a decision on how to proceed.
+
+In UI pseudo-code this might be used somewhat like this.
+
+```js
+export default function (state) {
+  if (state.loading === true) {
+    return html`
+      <main>
+        <h2>Tweets are loading.</h2>
+      </main>
+    `
+  } else if (state.tweets.length === 0)
+    return html`
+      <main>
+        <h2>No tweets to show</h2>
+      </main>
+    `
+  } else {
+    return html`
+      <main>
+        ${state.tweets.map(tweet => html`
+          <div>
+            ${tweet.author}
+            ${tweet.content}
+          </div>
+        `)}
+      </main>
+    `
+  }
+}
+```
+
 ## if-else does not scale
 If there's going to be one takeaway from this post, it should be the `if` /
 `else` statements don't scale.
