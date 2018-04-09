@@ -60,7 +60,7 @@ function view (state, emit, src) {
     }
     renderer.link = function (url, _, text) {
       urls.push([ url, he.decode(text) ])
-      return `<a class="black" href="${url}">${text}</a><sup class="ml1"><a class="link white" href="#references">${urls.length}</a></sup>`
+      return `<a class="black" href="${url}">${text}</a><sup class="ml1"><a class="link black" href="#references">${urls.length}</a></sup>`
     }
     return raw(marked(src, { renderer }))
   }
