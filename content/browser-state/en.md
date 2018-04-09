@@ -46,6 +46,9 @@ is how you scale up state in applications.
 Mr. Piano did a good talk on state machines. You can find it on
 [YouTube](https://www.youtube.com/watch?v=VU1NKX6Qkxc).
 
+And for good measure, [a guide how to implement state machines
+yourself](https://choo.io/docs/state-machines).
+
 ## Event Emitters
 People often use fancy words for event emitters. Maybe they don't know they're
 using an event emitters at all. Maybe they think that emitters (or "event
