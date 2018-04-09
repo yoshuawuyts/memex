@@ -27,7 +27,7 @@ function view (state, emit) {
               Productions
             </h2>
             <section class="list pa0 cf">
-              ${projects.reverse().map(project => {
+              ${projects.slice().reverse().map(project => {
                 return html`
                   <div class="fl w-50-l mt2">
                     <a href=${project.url} class="white">
@@ -45,7 +45,7 @@ function view (state, emit) {
               Articles
             </h2>
             <section class="list pa0">
-              ${articles.reverse().map(article => {
+              ${articles.slice().reverse().map(article => {
                 return html`
                   <div class="mt2">
                     <a href=${article.url} class="white">
