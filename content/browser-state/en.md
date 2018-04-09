@@ -1,7 +1,7 @@
-<!--
-Title: Managing State in Browser Applications
-Date: 2018-03-08
--->
+---
+title: Managing State in Browser Applications
+date: 2018-04-09
+---
 
 Nobody ever said building applications was easy.
 

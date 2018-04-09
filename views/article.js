@@ -1,5 +1,6 @@
 var raw = require('choo/html/raw')
 var html = require('choo/html')
+var fm = require('front-matter')
 var marked = require('marked')
 var css = require('sheetify')
 var he = require('he')
@@ -11,8 +12,6 @@ css`
   }
 `
 
-var TITLE = 'About Containers'
-
 module.exports = function (src) {
   return function (state, emit) {
     return view(state, emit, src)
@@ -20,10 +19,14 @@ module.exports = function (src) {
 }
 
 function view (state, emit, src) {
-  if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
-
   var urls = []
-  var content = render(src)
+  var content = fm(src)
+  var title = content.attributes.title
+  var date = content.attributes.date
+  var body = render(content.body)
+
+  if (state.title !== title) emit(state.events.DOMTITLECHANGE, title)
+
   var refs = urls.map((url) => html`<li class="mb2"><a class="black" href="${url[0]}">${url[0]}</a></li>`)
   return html`
     <body class="code lh-copy pa4">
@@ -35,12 +38,12 @@ function view (state, emit, src) {
       </header>
       <main class="center measure-wide">
         <h1 class="mb0 mt4">
-          Architecting a History Pipeline
+          ${title}
         </h1>
         <h2 class="gray f5 mt2 mb4">
-          Monday, February 5th 2018
+          ${date.toLocaleString('en-GB', {weekday: 'long'})}, ${date.toLocaleString('en-GB', {month: 'long'}) + ' '} ${date.getDate() + ' '} ${date.getFullYear()}
         </h2>
-        ${content}
+        ${body}
         <section>
           <a id="references">
             <h1>References</h1>

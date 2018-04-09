@@ -1,7 +1,7 @@
-<!--
-Title: Architecting a History Pipeline
-Date: 2018-02-05
--->
+---
+title: Architecting a History Pipeline
+date: 2018-02-05
+---
 
 Ahh, the [Web History
 API](https://developer.mozilla.org/en-US/docs/Web/API/History_API). It's one of
