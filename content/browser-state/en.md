@@ -97,12 +97,12 @@ component checks if it should re-render, it compares the last known value
 against the current value of the counter. And if the new value is higher, it
 re-renders. This means no more need for (shallow) object compares anywhere.
 
-Single state. Vector clocks. They work well. 
+Single state. Vector clocks. They work well.
 
 ## Maintaining Code
-Oh and to top things off, check out this talk [this
-talk](https://www.youtube.com/watch?v=xBa0_b-5XDw) about application maintenance by Thai
-Pangsakulyanont. It's great.
+Oh and to top things off, check out [this
+talk](https://www.youtube.com/watch?v=xBa0_b-5XDw) about application maintenance
+by Thai Pangsakulyanont. It's great.
 
 ---
 
