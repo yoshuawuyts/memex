@@ -101,7 +101,7 @@ Single state. Vector clocks. They work well.
 
 ## Maintaining Code
 Oh and to top things off, check out this talk [this
-talk](https://youtu.be/xBa0_b-5XDw") about application maintenance by Thai
+talk](https://www.youtube.com/watch?v=xBa0_b-5XDw) about application maintenance by Thai
 Pangsakulyanont. It's great.
 
 ---

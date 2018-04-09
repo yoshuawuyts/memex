@@ -3,5 +3,10 @@
     "name": "Architecting a history pipeline",
     "url": "/history",
     "date": "2018-02-13"
+  },
+  {
+    "name": "Browser Application State",
+    "url": "/browser-state",
+    "date": "2018-04-09"
   }
 ]

@@ -14,6 +14,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 app.route('/', require('./views/main'))
 app.route('/history', require('./views/article')(fs.readFileSync(path.join(__dirname, 'content/history/en.md'), 'utf8')))
+app.route('/browser-state', require('./views/article')(fs.readFileSync(path.join(__dirname, 'content/browser-state/en.md'), 'utf8')))
 app.route('/*', require('./views/404'))
 
 if (!module.parent) app.mount('body')
