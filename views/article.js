@@ -10,6 +10,10 @@ css`
     margin-bottom: 4rem;
     margin-top: 3rem;
   }
+
+  blockquote {
+    font-style: italic;
+  }
 `
 
 module.exports = function (src) {
@@ -40,7 +44,7 @@ function view (state, emit, src) {
         <h1 class="mb0 mt4">
           ${title}
         </h1>
-        <h2 class="gray f5 mt2 mb4">
+        <h2 class="gray f6 mt2 mb4">
           ${date.toLocaleString('en-GB', {weekday: 'long'})}, ${date.toLocaleString('en-GB', {month: 'long'}) + ' '} ${date.getDate() + ' '} ${date.getFullYear()}
         </h2>
         ${body}
@@ -59,7 +63,7 @@ function view (state, emit, src) {
   function render (src) {
     var renderer = new marked.Renderer()
     renderer.paragraph = function (text) {
-      return `<p class="f4 mb4">${text}</p>`
+      return `<p class="f5 mb4">${text}</p>`
     }
     renderer.link = function (url, _, text) {
       urls.push([ url, he.decode(text) ])

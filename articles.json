@@ -13,5 +13,10 @@
     "name": "Software as Gardening",
     "url": "/software-gardening",
     "date": "2018-04-28"
+  },
+  {
+    "name": "Rust Won't Save You From All Bugs",
+    "url": "/rust-bugs",
+    "date": "2018-08-10"
   }
 ]
